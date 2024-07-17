@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <grid>
+        <dimensionality>2</dimensionality>
+        <dimensions>50,50</dimensions>
+        <initialState>
+            <random>80</random> <!-- Initial cell at the center -->
+        </initialState>
+    </grid>
+    <neighborhoods>
+        <neighborhood id="G1DLeft">
+            <offset dim0="0" dim1="-1"/>
+        </neighborhood>
+        <neighborhood id="G1DRight">
+            <offset dim0="0" dim1="1"/>
+        </neighborhood>
+    </neighborhoods>
+    <rules>
+        <rule id="rule">
+SI(EQ(COMPTER(G1DRight), 2), 1, 0)
+        </rule>
+    </rules>
+</configuration>

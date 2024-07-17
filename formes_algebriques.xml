@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <grid>
+        <dimensionality>2</dimensionality>
+        <dimensions>101,101</dimensions> <!-- Corrected comment for a 30x30x30 grid -->
+        <initialState>
+            <!-- Correcting cells to include three coordinates for a 3D grid -->
+            <cell>0,0</cell>
+            <cell>0,100</cell>
+            <cell>100,0</cell>
+            <cell>100,100</cell>
+            <cell>50,50</cell>
+
+        </initialState>
+    </grid>
+    <rules>
+        <rule id="rule">
+           SI(EQ(COMPTER(G4), 1), 1, 0)
+        </rule>
+    </rules>
+</configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <grid>
+        <dimensionality>1</dimensionality>
+        <dimensions>100</dimensions>
+        <initialState>
+            <cell>50</cell> <!-- Initial cell at the center for better symmetry -->
+        </initialState>
+    </grid>
+
+    <rules>
+        <rule id="rule">
+MUL(SUB(SI(COMPTER(G2*), 1, 0), SI(EQ(COMPTER(G2*), 2), 1, 0)), SUB(1, COMPTER(G0)))  </rule>
+    </rules>
+</configuration>
